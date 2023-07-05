@@ -10,12 +10,15 @@ body{
     width: 100%;
     position: relative;
     background-size: cover;
-    background-color: #333;
+    background-color: #fff2f2;
     font-family: "Noto Sans";
     background-repeat: no-repeat;
     /*background-position: -150px;*/
-    overflow: hidden;
+    overflow: scroll;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
   h1{
     text-align: center;
@@ -39,6 +42,7 @@ header{
     width: 100%;
     position: absolute;
     height: 50%;
+    border-bottom: 3px solid black ;
 }
 
 /* Style Lignes déco*/
@@ -59,10 +63,62 @@ header{
     top: 20px;
 }
 
+.first{
+    display: flex;
+    align-items: stretch;
+    justify-content:center;
+    
+    animation: 1000ms ease 0ms 1 normal both apparitionD;
+}
+
+.art1{
+    border-radius: 5%;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+h2,p{
+    position: relative;
+    font-size: 2em;
+    font-family: "Belanosima";
+    top: 30%;
+    margin: 5px;
+}
+
+h2{
+    font-size: 5em;
+}
+.art1{
+    height: 400px;
+}
+
+.d2{
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+  }
+
+  .d1{
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+  }
+
+
 @keyframes apparitionG{
     0%{
         opacity: 0;
         transform: translateX(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes apparitionD{
+    0%{
+        opacity: 0;
+        transform: translateX(20%);
     }
     100%{
         opacity: 1;
