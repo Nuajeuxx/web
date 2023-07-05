@@ -1,0 +1,71 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+  
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-color: #333;
+    font-family: "Noto Sans";
+    background-repeat: no-repeat;
+    /*background-position: -150px;*/
+    overflow: hidden;
+}
+
+  h1{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    font-family: "Belanosima";
+    left: 24%;
+    top: 4%;;
+    font-size: 7em;
+    letter-spacing: 2px;
+    animation: 1000ms ease 0ms 1 normal both apparitionG;
+  }
+header{
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    position: absolute;
+    height: 50%;
+}
+
+/* Style Lignes déco*/
+.lignes{
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    animation: 1000ms ease 0ms 1 normal both apparitionG;
+}
+.l1{
+    width:250px;
+    border-bottom: white solid 5px;
+}
+.l2{
+    width:140px;
+    border-bottom: white solid 5px;
+    position: relative;
+    top: 20px;
+}
+
+@keyframes apparitionG{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
